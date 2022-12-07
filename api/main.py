@@ -13,7 +13,6 @@ def _get_app():
 
     app.include_router(api_router)
 
-
     @app.get("/check_db")
     async def check_db():
         return {"message": f"{next(get_db_sync())} ! Database is connected"}

@@ -10,3 +10,4 @@ RUN python3 -m pip install --upgrade pip
 COPY . /.project_reunion
 WORKDIR /.project_reunion
 RUN python3.8 -m pip install -r /.project_reunion/requirements.txt
+RUN pytest -s
