@@ -1,0 +1,4 @@
+FROM base:0.1
+COPY . /.project_reunion
+WORKDIR /.project_reunion
+RUN python3.8 -m pip install -r /.project_reunion/requirements.txt
