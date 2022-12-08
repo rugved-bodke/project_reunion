@@ -4,6 +4,7 @@ ENV PGDATA=/var/lib/postgresql/
 ENV DB_USER=admin_user
 ENV DB_PASSWORD=W7zIklRbeldjFDlmkPOwL3OHZ4m8ltk3
 ENV DB_HOST=dpg-ce8udqpa6gdhr71lkrj0-a.ohio-postgres.render.com
+ENV DB_NAME=db_reunion
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update -y
 RUN apt-get upgrade -y
